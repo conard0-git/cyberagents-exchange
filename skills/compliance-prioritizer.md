@@ -4,7 +4,7 @@ author: "dpickenstenable"
 github_url: "https://github.com/dpickenstenable/tenable-compliance-prioritization"
 description: "AI-powered risk-based prioritization for Tenable VM compliance benchmark failures"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["compliance", "vulnerability-management", "risk-assessment", "tenable", "prioritization", "reporting"]
 integrations: ["Tenable"]
 date_added: 2026-06-23
