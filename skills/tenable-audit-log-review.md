@@ -4,7 +4,7 @@ author: "dpickenstenable"
 github_url: "https://github.com/dpickenstenable/tenable-audit-log-review-agent"
 description: "AI-powered daily audit log analyzer for Tenable that detects anomalies, classifies user behavior, and generates compliance-ready reports"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["audit-log", "security-monitoring", "compliance", "anomaly-detection", "tenable", "soc2", "behavioral-analysis"]
 integrations: ["Tenable"]
 date_added: 2026-06-23
