@@ -4,7 +4,7 @@ author: "dpickenstenable"
 github_url: "https://github.com/dpickenstenable/exposure-response-consultant-agent"
 description: "AI-powered vulnerability strategist that analyzes Tenable scan data and recommends top 10 Exposure Response Initiatives with automated scoping"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["vulnerability-management", "exposure-management", "remediation", "risk-prioritization", "tenable", "initiative-planning", "strategic-analysis"]
 integrations: ["Tenable"]
 date_added: 2026-06-23
