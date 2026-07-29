@@ -4,7 +4,7 @@ author: "dpickenstenable"
 github_url: "https://github.com/dpickenstenable/exposure-alert-notifier"
 description: "Customizable email notification skill for Tenable VM with SMTPS security and professional HTML alert templates"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["tenable", "vulnerability-management", "email-notifications", "alerts", "smtps", "crown-jewel", "cisa-kev"]
 integrations: ["Tenable"]
 date_added: 2026-06-23
