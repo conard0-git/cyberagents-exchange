@@ -4,7 +4,7 @@ author: "dpickenstenable"
 github_url: "https://github.com/dpickenstenable/tenable-tag-optimizer-agent"
 description: "AI-powered tag recommendation skill that analyzes Tenable assets and creates intelligent, environment-specific tag taxonomies automatically"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["asset-management", "tag-automation", "taxonomy", "pattern-recognition", "tenable", "compliance-scoping", "vulnerability-management"]
 integrations: ["Tenable"]
 date_added: 2026-06-23
