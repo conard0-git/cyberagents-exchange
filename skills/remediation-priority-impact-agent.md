@@ -4,10 +4,12 @@ author: "smjennings"
 github_url: "https://github.com/smjennings/Remediation_Priority-Impact_Agent"
 description: "Prioritizes daily vulnerability fixes using Tenable exposure data, CISA KEV exploitation, MITRE ATT&CK and attack paths"
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["vulnerability-management", "exposure-management", "remediation-prioritization", "cisa-kev", "mitre-attack", "attack-path-analysis"]
-integrations: ["Tenable"]
+integrations: ["Tenable", "Tenable Hexa AI MCP"]
 date_added: 2026-06-18
+works_with_tenable_hexa_mcp: true
+cta: "T1"
 compatible_platforms: ["Claude Code"]
 invocation: "/fix-today"
 ---
