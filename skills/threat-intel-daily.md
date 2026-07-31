@@ -4,10 +4,12 @@ author: "smjennings"
 github_url: "https://github.com/smjennings/threat-intel-daily"
 description: "A daily, fully-sourced cyber threat intelligence briefing for CISOs, correlated against your Tenable environment."
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["threat-intelligence", "ciso", "cti", "vulnerability-management", "tenable", "security-automation"]
-integrations: ["Tenable", "Anthropic"]
+integrations: ["Tenable", "Tenable Hexa AI MCP", "Anthropic"]
 date_added: 2026-06-18
+works_with_tenable_hexa_mcp: true
+cta: "T1"
 compatible_platforms: ["Claude Code"]
 invocation: "/threat-intel-daily"
 ---

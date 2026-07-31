@@ -4,10 +4,12 @@ author: "andrewspearson"
 github_url: "https://github.com/andrewspearson/tenable-mcp-mssp"
 description: "An MCP server for orchestrating Tenable MSSP child container workflows. Make bulk queries. Take bulk actions."
 license: "MIT"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["mssp", "vulnerability-management", "tenable-vm", "exposure-management", "tenable-one"]
-integrations: ["Tenable"]
+integrations: ["Tenable", "Tenable Hexa AI MCP"]
 date_added: 2026-06-23
+works_with_tenable_hexa_mcp: true
+cta: "T1"
 transport: "stdio"
 runtime: "python"
 auth_method: "none"

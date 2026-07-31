@@ -4,15 +4,13 @@ author: "d-zito"
 github_url: "https://github.com/d-zito/tenable-healthcheck-agent"
 description: "Monitor Tenable VM scanning health, credentials, agents, scanners, and license usage with AI-powered insights."
 license: "MIT"
-type: "tool"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["health-monitoring", "vulnerability-management", "tenable-vm", "credential-scanning", "agent-monitoring", "license-tracking", "cli-tool"]
-framework: "Python CLI (pytenable SDK)"
-integrations: ["Tenable", "Anthropic"]
+integrations: ["Tenable"]
 date_added: 2026-06-15
 ---
 
-An open-source Python CLI tool that tracks Tenable Vulnerability Management health metrics over time and provides AI-powered recommendations through Claude.
+An open-source Python CLI tool that tracks Tenable Vulnerability Management health metrics over time and provides AI-powered recommendations through your choice of LLM.
 
 ## What it does
 

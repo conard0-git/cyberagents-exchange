@@ -5,7 +5,7 @@ author: "aristaeus-consulting"
 github_url: "https://github.com/jtbuchanan-tenb/aristaeus-playbook"
 description: "Delivers a continuously-updated security program maturity score with board-ready reporting, powered by live threat intelligence and exposure data mapped against NIST CSF and CIS Controls v8."
 license: "Proprietary"
-tier: "unreviewed"
+tier: "contributed"
 tags: ["security-program-maturity", "nist-csf", "cis-controls", "board-reporting", "threat-intelligence", "exposure-management"]
 integrations: ["Tenable", "Anthropic"]
 logo: "https://raw.githubusercontent.com/jtbuchanan-tenb/aristaeus-playbook/main/aristaeus-agentic-ai-consulting-logo.png"
@@ -34,6 +34,7 @@ agents_used:
     role: "Human checkpoint — CISO reviews maturity findings, approves narrative framing, and delivers board-ready briefing with Aristaeus-generated supporting materials"
     type: "info"
 date_added: 2026-06-25
+visibility: example
 ---
 
 ## From Threat Data to Board Confidence
