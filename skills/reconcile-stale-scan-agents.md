@@ -34,8 +34,10 @@ truly terminated or missing.
   does nothing destructive without explicit confirmation.
 - Surfaces running hosts that have no agent record at all — a coverage-gap
   report that is alerted but never used to delete anything.
-- Optionally scrubs deleted hosts' findings from Tenable Security Center /
-  Tenable Vulnerability Management as a best-effort follow-up.
+- Optionally scrubs deleted hosts' findings from a Tenable Security Center
+  repository (scan-import reconciliation) as a best-effort follow-up.
+  Security Center-specific; Tenable.io / Vulnerability Management uses a
+  different asset/findings model that this path does not target.
 
 ## How it works
 
