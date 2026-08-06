@@ -27,19 +27,23 @@ artifacts so an on-demand scan never leaves stray groups or state behind.
   temporary agent group, launch the scan against a named policy, poll to
   completion, and export the `.nessus` result.
 - **Combined Excel report.** Aggregate the findings into a single workbook:
-  Dashboard tab, Vulnerability Findings tab, Compliance Findings tab.
-  Color-code rows by severity (Critical red, Medium orange, Low yellow,
-  unknown gray). For DISA STIG audits, map the CAT level onto that same
-  scale (CAT I → Critical, CAT II → Medium, CAT III → Low) and sort
-  CAT I → II → III; CIS and other frameworks report pass/fail rather than
-  CAT and are colored by their available severity or status field.
-  Auto-filter, freeze headers, autosize columns.
+  Dashboard tab (with hyperlinks to the finding sheets), Vulnerability
+  Findings tab, and a STIG Findings tab that holds every FAILED item from
+  whatever compliance/audit policy you ran. Color-code rows on a shared
+  scale — Critical or High → red, Medium → orange, Low → yellow, unknown →
+  gray. DISA STIG audits are categorized by CAT level (CAT I → red,
+  CAT II → orange, CAT III → yellow) and sorted CAT I → II → III; audits
+  that don't expose a CAT (e.g. a CIS benchmark) still have their failed
+  items reported, bucketed under "Unknown" until the parser is extended to
+  read that framework's native severity field.
 - **Agent-profile assignment.** Two entry points: assign by explicit IP
   list, or match AWS EC2 instances by a tag substring and assign their
-  Nessus agents to the target profile (looked up by UUID or name).
-  Cloud-tag flow requires a dry-run preview showing the matched instances
-  and their Nessus linkage before anything mutates state. Supports a
-  repeatable per-manager override when agents span multiple Nessus Managers.
+  Nessus agents to the target profile (looked up by UUID or name). Agents
+  already on the target profile are detected and skipped. The interactive
+  menu always previews (matched instance names + Nessus linkage) and
+  requires confirmation before assigning; the CLI path exposes the same
+  preview via an opt-in `--dry-run`. Supports a repeatable per-manager
+  override when agents span multiple Nessus Managers.
 - **Automatic cleanup.** Temporary scan groups are removed after the run
   unless the caller explicitly opts out; raw `.nessus` files are kept only
   on explicit request.
