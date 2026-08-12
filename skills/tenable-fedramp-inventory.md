@@ -11,6 +11,7 @@ date_added: 2026-08-07
 contribution_agreement_date: 2026-08-06T20:32:58Z
 compatible_platforms: ["Claude Code"]
 invocation: "/tenable-fedramp-inventory"
+last_reviewed: 2026-08-12
 ---
 
 Produce the monthly FedRAMP **Integrated Inventory Workbook (IIW)** by
