@@ -1,4 +1,5 @@
 ---
+last_reviewed: 2026-08-13
 name: "Reconcile Stale Scan Agents"
 author: "conard0-git"
 github_url: "https://github.com/conard0-git/reconcile-stale-scan-agents"
