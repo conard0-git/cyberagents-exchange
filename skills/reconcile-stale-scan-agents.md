@@ -59,3 +59,47 @@ files, no hardcoded secrets, account IDs, or subnet ranges — so the skill
 stays portable. See `SKILL.md` for the full workflow,
 `references/aws-ec2-reconciliation.md` for the AWS EC2 details, and
 `references/findings-cleanup.md` for the optional Tenable findings scrub.
+
+## Example usage
+
+Invoke the skill from Claude Code by its slash-command name. **All
+destructive modes require an explicit safety-flag opt-in** — the bare
+invocation only produces a dry-run report.
+
+**Dry run — enumerate, classify, and propose deletions to a resumable
+JSON report (nothing is deleted):**
+
+```
+/reconcile-stale-scan-agents
+```
+
+**Confirm and delete from a saved dry-run report:**
+
+```
+/reconcile-stale-scan-agents --confirm-delete from dry_run_2026-08-12.json
+```
+
+**Opt-in override — also delete offline agents whose host is stopped:**
+
+```
+/reconcile-stale-scan-agents --remove-stopped
+```
+
+**Opt-in override — delete from the "offline in Nessus but running in EC2"
+bucket (protected by default):**
+
+```
+/reconcile-stale-scan-agents --remove-offline-running
+```
+
+**Standalone Security Center findings scrub for a caller-supplied IP list
+(skip the reconciliation entirely):**
+
+```
+/reconcile-stale-scan-agents scrub findings for ~/decommissioned-ips.txt
+```
+
+Known limitations (primary-IP-only running/stopped classification, IP-reuse
+precedence over the running-guard, Security-Center-only findings scrub,
+scrub-as-reconciliation-not-hard-delete, AWS-EC2-only reference
+implementation) are documented in the linked repo's README.
