@@ -1,4 +1,5 @@
 ---
+last_reviewed: 2026-08-13
 name: "Tenable → FedRAMP POA&M Workbooks"
 author: "conard0-git"
 github_url: "https://github.com/conard0-git/tenable-fedramp-poam"
@@ -11,7 +12,6 @@ date_added: 2026-08-07
 contribution_agreement_date: 2026-08-06T20:32:58Z
 compatible_platforms: ["Claude Code"]
 invocation: "/tenable-fedramp-poam"
----
 
 Turn raw Tenable Security Center findings into the monthly FedRAMP
 continuous-monitoring (**ConMon**) POA&M deliverables a vulnerability-
