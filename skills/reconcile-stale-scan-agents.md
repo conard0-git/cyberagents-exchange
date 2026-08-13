@@ -20,6 +20,14 @@ is not proof that a host is gone, so the skill only deletes an agent after
 confirming, against the cloud provider's own inventory, that the host is
 truly terminated or missing.
 
+A canonical use case is a **high-churn Kubernetes / EKS environment**, where
+EC2 worker nodes come up and go down daily and every terminated node leaves
+an offline Nessus agent record behind. Left alone those records pile up
+quickly — and because Tenable keeps the underlying findings tied to them,
+they carry **stale vulnerability data forward on hosts that no longer exist
+in production**. Reconciling against the live EC2 fleet keeps the agent
+inventory (and the vuln data downstream of it) honest.
+
 ## What it does
 
 - Enumerates the live cloud fleet (AWS EC2 in the reference implementation),
