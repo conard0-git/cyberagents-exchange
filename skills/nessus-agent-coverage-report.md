@@ -62,3 +62,39 @@ exclusions — with no hardcoded secrets, hosts, CIDRs, or repo IDs. See
 `SKILL.md` for the full workflow, `references/coverage-correlation.md` for
 the matching + classification logic, and `references/reporting-and-exclusions.md`
 for the Excel structure and exclusion model.
+
+## Example usage
+
+Once installed and configured (see the linked repo's README for prerequisites
+and environment variables), invoke the skill from Claude Code by name:
+
+**Bare invocation — uses everything from the environment:**
+
+```
+/nessus-agent-coverage-report
+```
+
+**Cloud-only run — skip on-prem when Security Center isn't configured:**
+
+```
+/nessus-agent-coverage-report cloud only, no on-prem
+```
+
+**Split a subset of VPCs onto a separate report tab:**
+
+```
+/nessus-agent-coverage-report split VPCs vpc-abc123, vpc-def456 onto their own tab
+```
+
+**Point at a specific exclusion file:**
+
+```
+/nessus-agent-coverage-report use exclusions from ~/nessus-exclusions.txt
+```
+
+Output is a dated Excel workbook (default `Nessus_Agent_Coverage_YYYYMMDD.xlsx`)
+with a coverage dashboard, an EC2-missing sheet, an on-prem missing/offline
+sheet, and an optional separate-VPC tab, plus a color-coded console summary.
+See the linked repo's README for known limitations (primary-NIC-only matching,
+on-prem coverage requiring Security Center + a CIDR list, running-EC2-only
+inventory, IP/CIDR-based exclusions, and other scope boundaries).
