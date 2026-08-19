@@ -1,4 +1,5 @@
 ---
+last_reviewed: 2026-08-19
 name: Tenable Scan to CSV
 author: conard0-git
 github_url: https://github.com/conard0-git/tenable-scan-to-csv
