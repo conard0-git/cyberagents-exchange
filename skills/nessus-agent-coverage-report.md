@@ -1,4 +1,5 @@
 ---
+last_reviewed: 2026-08-20
 name: "Nessus Agent Coverage Report"
 author: "conard0-git"
 github_url: "https://github.com/conard0-git/nessus-agent-coverage-report"
@@ -12,6 +13,7 @@ contribution_agreement_date: 2026-08-06T20:32:58Z
 compatible_platforms: ["Claude Code"]
 invocation: "/nessus-agent-coverage-report"
 ---
+last_reviewed: 2026-08-20
 
 Report Nessus agent **coverage** — which live hosts have an agent, and (more
 importantly) which do not. The skill correlates three data sources so a host
